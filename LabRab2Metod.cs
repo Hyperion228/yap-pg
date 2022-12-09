@@ -12,10 +12,10 @@ namespace ConsoleApp5
                 int step = 1;
                 int pipka = Convert.ToInt32(Console.ReadLine());
                 int popka = 1;
-                int jhopka;
+                int jhopka = 2;
                 for (int i = 0; i <= popka; i++)
                 {
-                    if(pipka % step == 0)
+                    if(pipka % step == 0 && step < jhopka)
                     {
                         jhopka = pipka / step;
                         Console.WriteLine($"{pipka} = {step} * {jhopka}");
@@ -24,7 +24,7 @@ namespace ConsoleApp5
                     step +=  1; 
                 }
            }
-            Factorize();
+            Factorize(); 
          }
         
     }
